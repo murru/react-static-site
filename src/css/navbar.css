@@ -1,0 +1,63 @@
+.navbar-wrapper {
+    background-color: #21222A;
+}
+
+.navbar {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    max-width: 550px;
+    padding-top: 31px;
+    padding-bottom: 31px;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+.logotype {
+    display: flex;
+    gap: 6.68;
+    align-items: center;
+}
+
+.react-logo {
+    height: 28.93px;
+    pointer-events: none;
+}
+.text-logo {
+    color: #61DAFB;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 22.2535px;
+    line-height: 27px;
+}
+
+.nav-text {
+    color: #DEEBF8;
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 19px;
+}
+  
+@media (prefers-reduced-motion: no-preference) {
+    .react-logo {
+        animation: react-logo-spin infinite 20s linear;
+    }
+}
+  
+@keyframes react-logo-spin {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+@media (max-width: 390px) {
+    .navbar {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
