@@ -23,4 +23,5 @@ jobs:
         run: npm install
       - name: Build project in dist folder...
         run: npm run build
-      - run: echo 'React Static Site projects was deployed successfully!!'
+      - name: Return result message...
+        run: echo 'React Static Site projects was deployed successfully!!'
