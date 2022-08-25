@@ -18,10 +18,6 @@ jobs:
           key: ${{ secrets.EKODEVS_SERVER_SSH_KEY }}
           script: |
             cd /var/www/react-static-site
-            ls -l
-            nvm use 16.17.0
-            git pull
-            npm install
-            npm run build
+            nvm current
       - name: Finish deployment
         run: echo 'Deployment was successfull'
