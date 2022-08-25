@@ -16,4 +16,6 @@ jobs:
           host: ${{ secrets.EKODEVS_SERVER_IP }}
           username: ${{ secrets.EKODEVS_SERVER_USER }}
           key: ${{ secrets.EKODEVS_SERVER_SSH_KEY }}
-          script: whoami
+          script: |
+            cd /var/www/react-static-site
+            ls -l
