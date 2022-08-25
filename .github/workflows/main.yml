@@ -17,6 +17,8 @@ jobs:
           username: ${{ secrets.EKODEVS_SERVER_USER }}
           key: ${{ secrets.EKODEVS_SERVER_SSH_KEY }}
           script: |
+            export NVM_DIR=~/.nvm
+            source ~/.nvm/nvm.sh
             cd /var/www/react-static-site
             nvm current
       - name: Finish deployment
