@@ -1,0 +1,29 @@
+.nav-wrapper {
+  display: flex;
+  justify-content: center;
+  &__nav {
+    align-items: center;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    margin-left: 26px;
+    margin-right: 28.61px;
+
+    .logotype {
+      align-items: center;
+      display: flex;
+      gap: 7px;
+    }
+
+    .lang-action {
+      align-items: center;
+      display: flex;
+      gap: 10px;
+    }
+
+    .links {
+      align-items: center;
+      display: flex;
+    }
+  }
+}
