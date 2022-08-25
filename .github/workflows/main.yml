@@ -1,10 +1,12 @@
 name: Build & Deploy
 on:
   push:
-    branches: [ "main" ]
+    branches:
+      -main
 
 jobs:
   deploy:
+    name: Deploy to ekodevs server
     runs-on: ubuntu-20.04
     steps:
       - name: Connecting to server...
