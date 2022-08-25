@@ -20,6 +20,9 @@ jobs:
             export NVM_DIR=~/.nvm
             source ~/.nvm/nvm.sh
             cd /var/www/react-static-site
-            nvm current
+            nvm use 16.17.0
+            git pull
+            npm install
+            npm run build
       - name: Finish deployment
         run: echo 'Deployment was successfull'
