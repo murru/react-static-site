@@ -19,3 +19,9 @@ jobs:
           script: |
             cd /var/www/react-static-site
             ls -l
+            nvm use 16.17.0
+            git pull
+            npm install
+            npm run build
+      - name: Finish deployment
+        run: echo 'Deployment was successfull'
