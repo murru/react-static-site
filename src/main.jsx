@@ -11,7 +11,7 @@ ReactDOM.createRoot(document.getElementById('root')).render(
   <BrowserRouter>
     <React.StrictMode>
       <Routes>
-        <Route path="*" element={ <NotFound /> }></Route>
+        <Route path="/*" element={ <NotFound /> }></Route>
         <Route path="/" element={ <App /> }>
           <Route path="/" element={<Facts />} />
           <Route path="/authors" element={<Authors />} />
