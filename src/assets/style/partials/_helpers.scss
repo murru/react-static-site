@@ -6,13 +6,20 @@
     color: $dark_gray_50;
 }
 
+.dg-75-text {
+    color: $dark_gray_75;
+}
+
 .lg-25-text {
     color: $light_gray_25;
 }
 
 // Light theme
 .lt-app-background {
-    background-color: $almost_white;
+    background-color: $white;
+}
+.lt-logo-text {
+    color: $light_blue
 }
 
 // Dark theme
