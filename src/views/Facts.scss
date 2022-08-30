@@ -1,0 +1,15 @@
+@import '../assets/style/partials/vars';
+
+.carousel-wrapper {
+    display: flex;
+    justify-content: center;
+    margin-top: 150px;
+    &__carousel {
+        color: $light_blue;
+        width: 550px;
+        font-style: normal;
+        font-weight: 500;
+        font-size: 24px;
+        line-height: 28px;
+    }
+}
